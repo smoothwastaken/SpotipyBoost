@@ -1,0 +1,58 @@
+{
+    "device": {
+        "id": "3564e96b91887815536617ae1b52548cdf50277c",
+        "is_active": true,
+        "is_private_session": false,
+        "is_restricted": false,
+        "name": "laitue",
+        "type": "Computer",
+        "volume_percent": 100},
+
+    "shuffle_state": true,
+    "repeat_state": "context",
+    "timestamp": 1667153973288,
+    "context": {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1EVHGWrwldPRtj"},
+
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EVHGWrwldPRtj",
+        "type": "playlist", "uri": "spotify:playlist:37i9dQZF1EVHGWrwldPRtj"},
+        "progress_ms": 56815,
+        "item": {
+            "album": {
+                "album_type": "album",
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"},
+
+                    "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                    "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                    "name": "Travis Scott",
+                    "type": "artist",
+                    "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"}],
+                    
+                "available_markets": ["AD", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KZ", "LA", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "PA", "PE", "PG", "PH", "PK", "PL", "PT", "PW", "PY", "RO", "RS", "RW", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW"],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/42WVQWuf1teDysXiOupIZt"},
+                "href": "https://api.spotify.com/v1/albums/42WVQWuf1teDysXiOupIZt",
+                "id": "42WVQWuf1teDysXiOupIZt",
+                "images": [{"height": 640, "url": "https://i.scdn.co/image/ab67616d0000b273f54b99bf27cda88f4a7403ce", "width": 640}, {"height": 300, "url": "https://i.scdn.co/image/ab67616d00001e02f54b99bf27cda88f4a7403ce", "width": 300}, {"height": 64, "url": "https://i.scdn.co/image/ab67616d00004851f54b99bf27cda88f4a7403ce", "width": 64}],
+                "name": "Birds In The Trap Sing McKnight",
+                "release_date": "2016-09-16",
+                "release_date_precision":
+                "day",
+                "total_tracks": 14,
+                "type": "album",
+                "uri": "spotify:album:42WVQWuf1teDysXiOupIZt"}, 
+            "artists": [{"external_urls": {"spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"}, "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY", "id": "0Y5tJX1MQlPlqiwlOH1tJY", "name": "Travis Scott", "type": "artist", "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"}],
+            "available_markets": ["AD", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KZ", "LA", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "PA", "PE", "PG", "PH", "PK", "PL", "PT", "PW", "PY", "RO", "RS", "RW", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW"],
+            "disc_number": 1,
+            "duration_ms": 191622,
+            "explicit": true,
+            "external_ids": {"isrc": "USSM11607552"},
+            "external_urls": {"spotify": "https://open.spotify.com/track/4gh0ZnHzaTMT1sDga7Ek0N"},
+            "href": "https://api.spotify.com/v1/tracks/4gh0ZnHzaTMT1sDga7Ek0N",
+            "id": "4gh0ZnHzaTMT1sDga7Ek0N",
+            "is_local": false,
+            "name": "sdp interlude", "popularity": 68, "preview_url": "https://p.scdn.co/mp3-preview/404dc927d20e32eb562a96dcdbb2c4cdcc2b4791?cid=1391dd213b1b4f808d5b2df7dd129d63", "track_number": 6, "type": "track", "uri": "spotify:track:4gh0ZnHzaTMT1sDga7Ek0N"}, "currently_playing_type": "track", "actions": {"disallows": {"resuming": true}}, "is_playing": true
+}
