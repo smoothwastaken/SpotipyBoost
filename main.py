@@ -2,10 +2,18 @@ import os
 import sys
 import time
 import spotipy
+import datetime
+import platform
 import spotipy.util as util
 from dotenv import load_dotenv
 from termcolor import colored, cprint
 
+
+def _clear_screen() -> None:
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def exit(exit_message="") -> None:
     if exit_message:
@@ -32,7 +40,7 @@ def main():
 
         # Asking the settings values
         else:
-            os.system("clear")
+            _clear_screen()
             cprint("[?]", 'green', attrs=['bold'], end=" ")
             username = str(input("Your Spotify username: "))
             try:
@@ -59,10 +67,12 @@ def main():
             timing += 1
             if current_song == None or current_song["item"] == None:
                 if timing < waiting_time:
+                    _clear_screen()
                     cprint("[!]", 'yellow', attrs=['bold'], end=" ")
                     print(
                         f"Waiting {waiting_time - timing} second(s) before starting... (waiting time set to {waiting_time} seconds)")
                 else:
+                    _clear_screen()
                     cprint("[*]", 'blue', attrs=['bold'], end=" ")
                     print("Fetching connected devices...")
                     devices_obj = sp.devices()
@@ -89,7 +99,7 @@ def main():
                         else:
                             sp.transfer_playback(last_device["id"], True)
             else:
-                os.system('clear')
+                _clear_screen()
                 current_playing_device_name = current_song["device"]["name"]
                 current_song_name = current_song["item"]["name"]
                 current_song_author = current_song["item"]["artists"][0]["name"]
@@ -97,6 +107,11 @@ def main():
                 print(
                     f"Already listening on {current_playing_device_name}: ", end=" ")
                 print(f"{current_song_name} • {current_song_author}")
+                reducting_factor = 2
+                current_playing_time = int(
+                    (current_song['progress_ms']) / int(current_song['item']['duration_ms']) * 1000) // 10
+                print(
+                    f"{'█' * (current_playing_time // reducting_factor)}{' ' * ((100 // reducting_factor) - (current_playing_time // reducting_factor))}  {str(datetime.timedelta(seconds=(current_song['progress_ms']//1000)))}/{str(datetime.timedelta(seconds=(current_song['item']['duration_ms']//1000)))}")
                 timing = 0
 
             time.sleep(1)
