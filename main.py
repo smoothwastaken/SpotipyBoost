@@ -55,8 +55,8 @@ def main():
         exit(exit_message="You didn't provide correct infos.")
 
     # Generate the token for the user
-    token = util.prompt_for_user_token(
-        username, scope=["app-remote-control", "streaming", "user-read-currently-playing", "user-modify-playback-state", "user-read-playback-state"])
+    token = util.prompt_for_user_token(username, ["app-remote-control", "streaming", "user-read-currently-playing",
+                                       "user-modify-playback-state", "user-read-playback-state"], os.getenv('SPOTIFY_CLIENT_ID'), os.getenv('SPOTIFY_CLIENT_SECRET'), os.getenv('SPOTIFY_REDIRECT_URI'))
 
     # If the token is fetch, launching the listening
     if token:
